@@ -18,7 +18,7 @@ session_start();
 
 <!-- ✅ MAIN CONTAINER -->
 <div class="container">
-    <h1>Available Tricycles</h1>
+    <h1>Available Tricycle</h1>
 
     <?php
     $tricycles = $conn->query("SELECT * FROM tricycles WHERE status = 'available'");
