@@ -14,9 +14,22 @@ session_start();
 </head>
 <body>
 
-<!-- ✅ Navbar -->
+<!-- ✅ Navbar 
 <div class="navbar">
     <div class="heading">TLMTS</div>
+    <div class="nav-links">
+        <a href="index.php">Home</a>
+        <a href="register.php">Register</a>
+        <a href="login.php">Login</a>
+    
+    </div>
+</div>
+-->
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <div class="branding">
+        <span class="heading">TLMTS </span>
+    </div>
     <div class="nav-links">
         <a href="index.php">Home</a>
         <a href="register.php">Register</a>
