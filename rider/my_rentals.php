@@ -14,8 +14,12 @@ $result = $conn->query("SELECT r.*, t.plate_no, d.label
 
 <!DOCTYPE html>
 <html>
-<head><title>My Rentals</title></head>
+<head>
+    <title>My Rentals</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
 <body>
+    <?php include '../includes/navbar.php'; ?>
     <h2>My Rentals</h2>
 
     <?php while ($row = $result->fetch_assoc()): ?>
@@ -36,6 +40,6 @@ $result = $conn->query("SELECT r.*, t.plate_no, d.label
         </div><hr>
     <?php endwhile; ?>
 
-    <p><a href="dashboard.php">Back to Dashboard</a></p>
+   <?php include '../includes/footer.php'; ?>
 </body>
 </html>
